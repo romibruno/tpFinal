@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Titan+One&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none !important;
+    transition: .2s;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*----BARRA DE NAVEGACION DE PRINCIPAL (index)----*/
+
+
+#logo{
+    color: white;
+    font-size: 1.6rem;
+    margin-right: 50px;
+}
+#logo span{
+    color: #ef1c12;
+}
+#nav-principal a{
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+#nav-principal a:hover{
+    color: #ef1c12;
+}
+#nav-principal a:after {
+    content: '';
+    position: absolute;
+    background: #ef1c12;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    top: 100%;
+    transition: 1s;
+}
+#nav-principal a:hover:after {
+    width: 100%;
+}
+
+
+/*---IMAGEN DE PORTADA------*/
+
+.imagenPortada{
+    background-image: url(../img/principal.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cont_portada{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    height: 300px;
+    width: 90%;
+    background-color:rgb(247,7,7,0.32);
+    padding: 20px 20px 0px 30px;
+}
+
+
+
+.cont_portada h2 {
+    margin-bottom: 25px;
+    font-size: 8vh;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #f6f7f8;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    text-shadow:black 0.1em 0.1em 0.2em;
+    background-color: red;
+
+}
+
+
+.cont_portada h1 {
+    font-family: fantasy;
+    font-size:16vh;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow:black 0.1em 0.1em 0.2em;
+}
+
+
+
+/*------TABLA DE HORARIOS-------*/
+#margen_clases
+{
+    margin-top: 80px;
+}
+
+.titulo_horarios
+{
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    color: black;
+    margin-bottom: 20px;
+    text-shadow:grey 0.1em 0.1em 0.2em;
+}
+
+.tabla
+{
+    width: 88% !important;
+    text-align: center ;
+    margin: auto;
+    font-size: 17px;
+}
+
+.horario
+{
+    font-style: italic;
+    color: black;
+    vertical-align: middle;
+}
+
+.clase
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+    vertical-align: middle!important;
+}
+
+th
+{
+    padding-top: 20px !important;
+    padding-bottom: 20px!important;
+    font-style: italic;
+}
+
+td 
+{
+    padding:18px !important;
+}
+
+
+
+/*----PRECIOS DE PAQUETES ----*/
+
+
+/*Estilo de las cartas*/
+
+#precios
+{
+    margin: 60px 0px;
+    padding: 40px 0px;
+}
+
+.titulo_precio
+{
+    text-align: center;
+    margin-top: 40px;
+    font-family: fantasy;
+    font-size: 60px;
+    color: black;
+    text-shadow:grey 0.1em 0.1em 0.2em;
+}
+
+.subtitulo_precio
+{
+    font-family: fantasy;
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.precio_title
+{
+    font-family: 'Caramel', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.precio_numero
+{
+    color: white;
+    font-style: italic;
+}
+
+.precio_item
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.precio_item i
+{
+    font-size: 18px;
+}
+
+.card_color
+{
+    background-color:  #ef1c12!important;
+}
+
+.card_estilo
+{
+    border-top-left-radius:4% !important;
+    border-top-right-radius: 4% !important;
+    border-bottom-left-radius: 4% !important;
+    border-bottom-right-radius: 4% !important;
+}
+
+.card_estilo:hover
+{
+    box-shadow: inset 2em -0.5em 3em rgba(0,0,0,0.4), 0 0 0 1px rgb(255,255,255), 0.9em -0.4em 1em rgba(0,0,0,0.7);
+}
+
+.card-header
+{
+    border-top-left-radius:4% !important;
+    border-top-right-radius: 4% !important;
+}
+
+.icono
+{
+    font-size: 45px;
+}
+
+
+
+/*----FOOTER----*/
+
+footer
+{
+    width: 100%;
+    background-color:#0a141d;
+    padding: 20px;
+    align-items: center;
+
+}
+
+
+.social-icons-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.social-icon
+{
+    height: 35px;
+    width: 50px;
+    text-align: center;
+
+
+}
+
+.social-icon i
+{
+    color: white;
+    font-size: 25px;
+    transition: all 300ms ease;
+}
+
+.social-icon i:hover
+{
+    color: #ef1c12;
+}
+
+
+.copy
+{
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.copyright
+{
+    color: #f2f2f2;
+    opacity: 0.3;
+}
+
+
+
+
+/*----FONDO PARA SOCIO NUEVO ----*/
+.fondo
+{
+    background: linear-gradient(90deg,#ef1c12,white);
+}
+
+
+/*----BARRA DE NAVEGACION----*/
+
+.color-bg
+{
+    background-color: black !important;
+}
+
+
+#marca{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+#marca span{
+    color: #ef1c12; 
+    
+}
+
+   
+
+/*----IMAGEN DE FONDO ----*/
+.logoImg{
+   
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+
+.logoImg #bg
+{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 899px;
+    object-fit: fill;
+    opacity: 40%;
+    filter:brightness(70%);
+}
+   /*----ESTILOS DEL FORMULARIO ----*/
+#formulario
+{
+    width: 65%;
+    margin: auto;
+    position: absolute;
+    top: 25px;
+}
+
+ #titulo
+{
+    color: white;
+    margin-bottom: 30px;
+    font-family: fantasy; 
+    text-shadow:grey 0.1em 0.1em 0.2em;
+}
+  
+form 
+{
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 3%;
+    position:relative;
+  
+}
+
+.error
+{
+    font-size: small;
+    margin-top: 5px;
+    font-style: italic;
+    font-weight:500;
+    color:crimson;
+} 
+
+
+.estBoton
+{
+    padding:8px 14px;
+    font-family: 'Poppins', sans-serif;   
+}
+
+
+
+#nav{
+    width: 100%;
+    height: 150px;
+    filter:brightness(70%);
+}
+
+
+
+/*----FONDO PARA SOCIOS A MODIFICAR ----*/
+.fondoMod
+{
+    background: linear-gradient(90deg, orangered , white);
+}
+
+
+
+
+/*----FONDO Y ESTILOS PARA LISTA DE SOCIOS ----*/
+.fondoList
+{
+    background: linear-gradient(90deg, red , white);
+}
+.margen
+{
+    margin-top: 100px;   
+}
+    
+.bi{
+    border-radius: 10%;
+    align-content: center;
+}
+
+.estTabla
+{
+    box-shadow: inset 2em -0.5em 3em rgba(0,0,0,0.4), 0 0 0 1px rgb(255,255,255), 0.9em -0.4em 1em rgba(0,0,0,0.7);
+}
+
+
+
